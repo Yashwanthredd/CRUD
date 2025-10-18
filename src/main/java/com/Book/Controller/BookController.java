@@ -18,11 +18,11 @@ public class BookController {
     private BookService bookService;
 
     // Create Book
-    @PostMapping("/addBook")
-    public ResponseEntity<Book> addBook(@RequestBody Book book) {
-        Book savedBook = bookService.saveBook(book);
-        return ResponseEntity.ok(savedBook);
-    }
+    // @PostMapping("/addBook")
+    // public ResponseEntity<Book> addBook(@RequestBody Book book) {
+    //     Book savedBook = bookService.saveBook(book);
+    //     return ResponseEntity.ok(savedBook);
+    // }
 
     // Get Book by ID
     @GetMapping("/book/{id}")
