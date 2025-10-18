@@ -52,7 +52,7 @@ public class BookController {
     @DeleteMapping("/Delete/{id}")
     public ResponseEntity<Void> deleteBook(@PathVariable Long id) {
         bookService.deleteBook(id);
-        console.log("Hai");
+        
         return ResponseEntity.noContent().build();
     }
 }
